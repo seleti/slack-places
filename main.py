@@ -17,7 +17,7 @@ def places():
     encoded_args = urllib.urlencode(query_args)
     url = "https://maps.googleapis.com/maps/api/geocode/json?"+encoded_args
     result = requests.get(url)
-    if (result["status"]!="OK")
+    if (result["status"]!="OK"):
         return "Invalid entry. Try Again"
     lat = result["results"]["geometry"]["location"]["lat"]
     lng = result["results"]["geometry"]["location"]["lng"]
