@@ -45,6 +45,10 @@ def stock():
                     "Day Low: " + result[4])
     return result_text
 
+@app.route("/")
+def hello():
+    return "Hello World! by Sid"
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
